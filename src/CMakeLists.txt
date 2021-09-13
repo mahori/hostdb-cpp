@@ -21,6 +21,7 @@ add_executable(${PROJECT_NAME} SubCommand.cpp main.cpp)
 target_include_directories(${PROJECT_NAME} PUBLIC ${Boost_INCLUDE_DIRS})
 target_include_directories(${PROJECT_NAME} PUBLIC ${LIBMONGOCXX_INCLUDE_DIRS})
 
+target_link_libraries(${PROJECT_NAME} curl)
 target_link_libraries(${PROJECT_NAME} Boost::program_options)
 target_link_libraries(${PROJECT_NAME} mongo::mongocxx_shared)
 
