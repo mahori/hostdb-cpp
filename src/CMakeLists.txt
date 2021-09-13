@@ -16,7 +16,7 @@ find_package(mongocxx REQUIRED)
 
 # executable
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} SubCommand.cpp main.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${Boost_INCLUDE_DIRS})
 target_include_directories(${PROJECT_NAME} PUBLIC ${LIBMONGOCXX_INCLUDE_DIRS})
